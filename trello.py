@@ -42,10 +42,10 @@ for c in api("cards"):
         list_to_card[c["idList"]] = [c]
 
 print("""--------
-SUMMARY""")
-print("NUMBER OF LISTS: " + str(len(list_to_card)))
-print("TOTAL NUMBER OF CARDS: " + str(cardCount))
-print("--------")
+SUMMARY
+NUMBER OF LISTS: """ + str(len(list_to_card)) + """
+TOTAL NUMBER OF CARDS: """ + str(cardCount) + """
+--------""")
 
 for l in list_to_card:
     print("NAME: \"" + list_map[l] + "\"")
