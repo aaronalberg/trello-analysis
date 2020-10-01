@@ -7,12 +7,13 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
 API_TOKEN = os.getenv('API_TOKEN')
+BOARD_ID = os.getenv('BOARD_ID')
 print(API_KEY)
 print(API_TOKEN)
 
 
 def api(endpoint):
-    boardId = "5f36aec6aeb953285a8abf4a"
+    boardId = BOARD_ID
     url = "https://api.trello.com/1/boards/" + boardId + "/"
 
     query = {
