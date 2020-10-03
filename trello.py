@@ -53,13 +53,12 @@ for l in list_to_card:
     print()
 
 
-    #Uncomment to also print all cards on board, by list
-    '''
-    print("CARDS: ")
-    for c in list_to_card[l]:
-        print("\n" + "- " + c["name"])
-    print()
-    print("--------------")
-    '''
+    if os.getenv("FULL_DETAILS") == True:
+        print("CARDS: ")
+        for c in list_to_card[l]:
+            print("\n" + "- " + c["name"])
+        print()
+        print("--------------")
+    
 
 

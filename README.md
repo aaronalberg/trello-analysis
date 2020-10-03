@@ -18,5 +18,7 @@ trello-analysis was born because I realized I couldn't count the number of cards
 - Populate your .env file in the root of the project with the following values
   - `API_KEY` ![Trello tutorial](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/)
   - `API_TOKEN` ![Trello tutorial](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/)
-  - `BOARD_ID` The ID of the Trello board you want to analyze (you can find this by adding `.json` to the end of your board URL)
+  - `BOARD_ID` The ID of the Trello board you want to analyze (you can find this by adding `.json` to the end of your 
+  board URL)
+  - `FULL_DETAILS` Whether or not you want the names of the cards printed along with the summaries of each list
 - That's it! Use `python3 trello.py` from the project directory to run the script
