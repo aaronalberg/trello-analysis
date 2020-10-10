@@ -53,7 +53,7 @@ for l in list_to_card:
     print()
 
 
-    if os.getenv("FULL_DETAILS") == True:
+    if os.getenv("FULL_DETAILS") == 'True':
         print("CARDS: ")
         for c in list_to_card[l]:
             print("\n" + "- " + c["name"])
